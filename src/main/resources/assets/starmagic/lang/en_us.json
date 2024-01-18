@@ -1,3 +1,8 @@
 {
-  "item.starmagic.cobbled_wand": "§4Cobbled Wand§r"
+  "item.starmagic.cobbled_wand": "§4Cobbled Wand§r",
+  "item.starmagic.fireball_spelltome": "§6Fireball Spelltome§r",
+
+  "block.starmagic.mana_lamp": "Mana Lamp",
+
+  "itemgroup.starmagic_group": "Starmagic Items"
 }

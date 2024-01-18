@@ -2,6 +2,8 @@ package net.hungryfox.starmagic;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.hungryfox.starmagic.block.ModBlocks;
+import net.hungryfox.starmagic.item.ModItemGroups;
 import net.hungryfox.starmagic.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +14,11 @@ public class Starmagic implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Starmagic (By HungryBoy02/HungryFox02) Initializing.");
+		LOGGER.info("Starmagic Initializing.");
+
+		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

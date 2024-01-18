@@ -12,16 +12,20 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item cobbled_wand = registerItem("cobbled_wand", new Item(new FabricItemSettings()));
-
+    public static final Item fireball_spelltome = registerItem("fireball_spelltome", new Item(new FabricItemSettings()));
     private static void addItemToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(cobbled_wand);
+        entries.add(fireball_spelltome);
     }
+
+
     private static Item registerItem(String itemid, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Starmagic.MOD_ID, itemid), item);
     }
     public static void registerModItems() {
         Starmagic.LOGGER.info("Registering items for " + Starmagic.MOD_ID);
-
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIngredientItemGroup);
+
+
     }
 }
