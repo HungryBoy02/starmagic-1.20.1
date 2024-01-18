@@ -16,7 +16,7 @@ public class ModBlocks {
 
 
     public static final Block mana_lamp = registerBlock("mana_lamp",
-            new Block(FabricBlockSettings.copyOf(Blocks.GREEN_STAINED_GLASS).sounds(BlockSoundGroup.AMETHYST_BLOCK).luminance(15).nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never)));
+            new Block(FabricBlockSettings.copyOf(Blocks.GREEN_STAINED_GLASS).sounds(BlockSoundGroup.GLASS).luminance(15).nonOpaque().allowsSpawning(Blocks::never).solidBlock(Blocks::never).suffocates(Blocks::never).blockVision(Blocks::never)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
