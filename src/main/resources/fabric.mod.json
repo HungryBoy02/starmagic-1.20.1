@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "starmagic",
+	"version": "${version}",
+	"name": "Starmagic",
+	"description": "Magic from the stars",
+	"authors": [
+		"HungryBoy02/HungryGaming02"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/starmagic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hungryfox.starmagic.Starmagic"
+		],
+		"client": [
+			"net.hungryfox.starmagic.StarmagicClient"
+		],
+		"fabric-datagen": [
+			"net.hungryfox.starmagic.StarmagicDataGenerator"
+		]
+	},
+	"mixins": [
+		"starmagic.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
