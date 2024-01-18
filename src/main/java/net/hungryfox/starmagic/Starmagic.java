@@ -11,6 +11,6 @@ public class Starmagic implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Starmagic (By HungryBoy02/HungryFox02) Initialized.");
 	}
 }
