@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#E#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:glass"
+        },
+        "E": {
+            "item": "minecraft:experience_bottle"
+        }
+    },
+    "result": {
+        "item": "starmagic:mana_lamp",
+        "count": 1
+    }
+}
